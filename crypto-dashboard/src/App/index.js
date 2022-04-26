@@ -1,12 +1,18 @@
-
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      Hello wordl
-    </div>
-  );
+function Welcom(props){
+  return(
+    <h2>ayoub, {props.name}</h2>
+  )
+}
+
+class App extends Component {
+  render() {
+    return (
+   <Welcom name ={"ayou"}/>
+    );
+  }
 }
 
 export default App;
